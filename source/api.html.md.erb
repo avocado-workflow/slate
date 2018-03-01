@@ -61,16 +61,16 @@ themselves, instead they should use the above-described links to navigate
 
 ## Index
 
-<%= ERB.new(File.read("../target/generated-snippets/index-example/curl-request.md")).result(binding) %>
-<%= ERB.new(File.read("../target/generated-snippets/index-example/http-request.md")).result(binding) %>
-<%= ERB.new(File.read("../target/generated-snippets/index-example/http-response.md")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/curl-request.md")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/http-request.md")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/http-response.md")).result(binding) %>
 
 The index provides the entry point into the service. A `GET` request is used to access the index.
 
 ### Response structure
 
-<%= ERB.new(File.read("../target/generated-snippets/index-example/response-fields.md")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/response-fields.md")).result(binding) %>
 
 ### Links
 
-<%= ERB.new(File.read("../target/generated-snippets/index-example/links.md")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/links.md")).result(binding) %>
