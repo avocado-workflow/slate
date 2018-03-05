@@ -2,8 +2,8 @@
 title: REST Notes API Guide
 
 language_tabs:
-  - shell
-  - http
+  - shell: cURL
+  - http: HTTP
 
 search: true
 ---
@@ -37,40 +37,61 @@ Status code       | Usage
 `400 Bad Request` | The request was malformed. The response body will include an error providing further information
 `404 Not Found`   | The requested resource did not exist
 
-## Errors
-
-<%= ERB.new(File.read("../target/generated-snippets/error-example/http-response.md")).result(binding) %>
-
-Whenever an error response (status code >= 400) is returned, the body will contain a JSON object
-that describes the problem. The error object has the following structure:
-
-<%= ERB.new(File.read("../target/generated-snippets/error-example/response-fields.md")).result(binding) %>
-
-## Hypermedia
-
-RESTful Notes uses hypermedia and resources include links to other resources in their
-responses. Responses are in [Hypertext Application Language (HAL)](http://stateless.co/hal_specification.html format).
-Links can be found beneath the `_links` key. Users of the API should not create URIs
-themselves, instead they should use the above-described links to navigate
-
 
 
 # Resources
 
 
+## Help Articles
 
-## Index
+The Help Articles resources is used to create and list notes
 
-<%= ERB.new(File.read("../target/generated-snippets/get-help-article/curl-request.md")).result(binding) %>
-<%= ERB.new(File.read("../target/generated-snippets/get-help-article/http-request.md")).result(binding) %>
-<%= ERB.new(File.read("../target/generated-snippets/get-help-article/http-response.md")).result(binding) %>
+### Listing help articles
 
-The index provides the entry point into the service. A `GET` request is used to access the index.
+<%= ERB.new(File.read("../target/generated-snippets/list-help-articles/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/list-help-articles/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/list-help-articles/http-response.adoc")).result(binding) %>
 
-### Response structure
+#### Path variables
+<%= ERB.new(File.read("../target/generated-snippets/list-help-articles/path-parameters.adoc")).result(binding) %>
 
-<%= ERB.new(File.read("../target/generated-snippets/get-help-article/response-fields.md")).result(binding) %>
+#### Response structure
+<%= ERB.new(File.read("../target/generated-snippets/list-help-articles/response-fields.adoc")).result(binding) %>
 
-### Links
+### Getting concrete help article
 
-<%= ERB.new(File.read("../target/generated-snippets/get-help-article/links.md")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/http-response.adoc")).result(binding) %>
+
+#### Path variables
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/path-parameters.adoc")).result(binding) %>
+#### Response structure
+<%= ERB.new(File.read("../target/generated-snippets/get-help-article/response-fields.adoc")).result(binding) %>
+
+### Creating new help article
+
+<%= ERB.new(File.read("../target/generated-snippets/create-help-article/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/create-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/create-help-article/http-response.adoc")).result(binding) %>
+
+#### Path variables
+<%= ERB.new(File.read("../target/generated-snippets/create-help-article/path-parameters.adoc")).result(binding) %>
+#### Request structure
+<%= ERB.new(File.read("../target/generated-snippets/create-help-article/request-fields.adoc")).result(binding) %>
+#### Response structure
+<%= ERB.new(File.read("../target/generated-snippets/create-help-article/response-fields.adoc")).result(binding) %>
+
+### Updating new help article
+
+<%= ERB.new(File.read("../target/generated-snippets/update-help-article/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/update-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../target/generated-snippets/update-help-article/http-response.adoc")).result(binding) %>
+
+#### Path variables
+<%= ERB.new(File.read("../target/generated-snippets/update-help-article/path-parameters.adoc")).result(binding) %>
+#### Request structure
+<%= ERB.new(File.read("../target/generated-snippets/update-help-article/request-fields.adoc")).result(binding) %>
+#### Response structure
+<%= ERB.new(File.read("../target/generated-snippets/update-help-article/response-fields.adoc")).result(binding) %>
+
