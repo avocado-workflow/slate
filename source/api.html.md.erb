@@ -50,6 +50,7 @@ A `POST` request will create new workflow draft version
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-workflow/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-workflow/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-workflow/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-workflow/request-fields.adoc")).result(binding) %>
 
@@ -67,6 +68,7 @@ A `POST` request is used to create a new user
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user/request-fields.adoc")).result(binding) %>
 
 ## Process instances
@@ -76,6 +78,7 @@ A `GET` request will return all process instances for client
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instances/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instances/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instances/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instances/request-parameters.adoc")).result(binding) %>
 
@@ -90,6 +93,7 @@ A `GET` request will return all process instances that has indexed properties in
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-process-instances/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-process-instances/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-process-instances/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-process-instances/request-parameters.adoc")).result(binding) %>
 
@@ -104,6 +108,7 @@ A `PUT` request will mark process instance as CANCELLATION_REQUESTED and delete 
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/request-process-instance-cancellation/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/request-process-instance-cancellation/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/request-process-instance-cancellation/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/request-process-instance-cancellation/request-fields.adoc")).result(binding) %>
 
@@ -117,6 +122,7 @@ A `GET` request will return list of waiting cancellation process instances
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/waiting-cancellation-requests/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/waiting-cancellation-requests/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/waiting-cancellation-requests/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -130,6 +136,7 @@ A `PUT` request will deny cancellation request and make process instance active 
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/deny-process-instance-cancellation/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/deny-process-instance-cancellation/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/deny-process-instance-cancellation/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -142,11 +149,11 @@ A `PUT` request will approve cancellation request and make process instance comp
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/approve-process-instance-cancellation/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/approve-process-instance-cancellation/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/approve-process-instance-cancellation/path-parameters.adoc")).result(binding) %>
 
 #### Example response
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/approve-process-instance-cancellation/http-response.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/approve-process-instance-cancellation/http-response.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Soft delete process instance
@@ -154,11 +161,11 @@ A `POST` request will mark process instance and all views as deleted
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/soft-delete-process-instance/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/soft-delete-process-instance/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/soft-delete-process-instance/path-parameters.adoc")).result(binding) %>
 
 #### Example response
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/soft-delete-process-instance/http-response.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/soft-delete-process-instance/http-response.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Undelete process instance
@@ -166,6 +173,7 @@ A `POST` request will mark process instance and all views as NOT deleted
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/undelete-process-instance/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/undelete-process-instance/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/undelete-process-instance/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -178,6 +186,7 @@ A `DELETE` request will completely delete  process instance and all activities a
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/hard-delete-process-instance/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/hard-delete-process-instance/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/hard-delete-process-instance/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -194,6 +203,7 @@ A `GET` request will return all tags for organization
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-tags/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-tags/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-tags/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -206,6 +216,7 @@ A `POST` request will create tag
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-tag/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-tag/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-tag/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-tag/request-fields.adoc")).result(binding) %>
 
@@ -219,6 +230,7 @@ A `PUT` request will update tag
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-tag/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-tag/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-tag/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-tag/request-fields.adoc")).result(binding) %>
 
@@ -232,6 +244,7 @@ A `DELETE` request will delete tag
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-tag/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-tag/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-tag/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -243,6 +256,7 @@ A `GET` request will return all tags assigned to process instance
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instance-tags/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instance-tags/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-process-instance-tags/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -254,6 +268,7 @@ A `POST` request will return all tags assigned to process instance
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/assign-to-process-instance-tag/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/assign-to-process-instance-tag/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/assign-to-process-instance-tag/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/assign-to-process-instance-tag/request-fields.adoc")).result(binding) %>
 
@@ -269,6 +284,7 @@ A `GET` request will return note for specified process instance(started workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-process-instance-note/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-process-instance-note/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-process-instance-note/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -281,6 +297,7 @@ A `POST` request will create and add note to process instance
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-process-instance-note/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-process-instance-note/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-process-instance-note/path-parameters.adoc")).result(binding) %>
 ====== Request body
 Text of note
@@ -297,6 +314,7 @@ A `GET` request will return all comleted user activities for process instance
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-history-for-client-dashboard/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-history-for-client-dashboard/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-history-for-client-dashboard/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -316,6 +334,7 @@ A `PUT` set current assignee for activity instance
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-set-assignee/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-set-assignee/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-set-assignee/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-set-assignee/request-fields.adoc")).result(binding) %>
 
@@ -329,6 +348,7 @@ A `PUT` request will return previously assigned activity instance to assigner
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-return-to-sender/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-return-to-sender/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/activity-instance-return-to-sender/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -340,6 +360,7 @@ A `GET` request will return workflow step info
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-activity-instance/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-activity-instance/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-activity-instance/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -355,6 +376,7 @@ Creates a Business Information link
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-business-information-link/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-business-information-link/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-business-information-link/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-business-information-link/request-fields.adoc")).result(binding) %>
 
@@ -368,6 +390,7 @@ Update a business information resource of type LINK
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-business-information-link/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-business-information-link/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-business-information-link/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-business-information-link/request-fields.adoc")).result(binding) %>
 
@@ -381,6 +404,7 @@ Deletes a business information resource of type LINK
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-business-information-link/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-business-information-link/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-business-information-link/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -392,6 +416,7 @@ Deletes a business information resource of type DOCUMENT
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-business-information-document/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-business-information-document/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-business-information-document/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -403,6 +428,7 @@ A request to retrieve all the business information resources in the organization
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-all-business-information/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-all-business-information/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-all-business-information/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -416,6 +442,7 @@ Both publisher and subscriber resources are returned.
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-my-business-information/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-my-business-information/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-my-business-information/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -432,6 +459,7 @@ Creates a User route
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user-route/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user-route/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user-route/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-user-route/request-fields.adoc")).result(binding) %>
 
@@ -444,6 +472,7 @@ A request to retrieve all user routes for organization or team(Depend on setting
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-user-routes/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-user-routes/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-user-routes/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -456,12 +485,12 @@ Returns one user route
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-route/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-route/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-route/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-route/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-route/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-route/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Update User route
@@ -469,6 +498,7 @@ Update a User route
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-route/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-route/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-route/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-route/request-fields.adoc")).result(binding) %>
 
@@ -482,6 +512,7 @@ Delete a User route
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-user-route/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-user-route/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-user-route/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -498,6 +529,7 @@ Return all the team users in a organization
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-all-team-users/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-all-team-users/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-all-team-users/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -510,6 +542,7 @@ Assign a role to an user in team
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-team-user/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-team-user/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-team-user/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-team-user/request-fields.adoc")).result(binding) %>
 
@@ -524,6 +557,7 @@ Update the role assigned to a user in the team
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-team-user/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-team-user/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-team-user/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-team-user/request-fields.adoc")).result(binding) %>
 
@@ -544,6 +578,7 @@ Return all Clients for whom the logged in user can start the given workflow
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-clients-by-user-and-wf/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-clients-by-user-and-wf/request-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-clients-by-user-and-wf/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-clients-by-user-and-wf/curl-request.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-clients-by-user-and-wf/http-response.adoc")).result(binding) %>
@@ -560,6 +595,7 @@ Return all Clients for whom the logged in user can start the given workflow
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record/curl-request.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record/http-response.adoc")).result(binding) %>
@@ -571,6 +607,7 @@ Return all Clients for whom the logged in user can start the given workflow
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record-bulk/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record-bulk/request-fields.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record-bulk/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record-bulk/curl-request.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-dynamic-entity-record-bulk/http-response.adoc")).result(binding) %>
@@ -585,6 +622,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-notification/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-notification/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-notification/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-notification/request-fields.adoc")).result(binding) %>
 
@@ -597,6 +635,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-notification/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-notification/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-notification/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-notification/request-fields.adoc")).result(binding) %>
 
@@ -609,6 +648,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-notification/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-notification/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-notification/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -619,6 +659,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-notification-admin-page/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-notification-admin-page/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-notification-admin-page/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -630,6 +671,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-notification-user-page/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-notification-user-page/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-notification-user-page/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -646,6 +688,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/generate-report/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/generate-report/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/generate-report/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/generate-report/request-parameters.adoc")).result(binding) %>
 
@@ -658,6 +701,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-on-demand-reports/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-on-demand-reports/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-on-demand-reports/path-parameters.adoc")).result(binding) %>
 
 #### Example response
@@ -674,57 +718,57 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-help-article/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-help-article/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-help-article/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-help-article/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-help-article/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### List
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-help-articles/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-help-articles/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-help-articles/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-help-articles/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-help-articles/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-help-articles/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### Create
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/request-fields.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-help-article/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### Update
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/request-fields.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-help-article/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### Delete
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-help-article/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-help-article/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-help-article/path-parameters.adoc")).result(binding) %>
 
 #### Example response
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-help-article/http-response.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-help-article/http-response.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 
@@ -736,48 +780,48 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscribers/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscribers/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscribers/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscribers/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscribers/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscribers/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### Create
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/request-fields.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/create-new-subscriber/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### Update
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/request-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-subscriber/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 ### Add new subscription
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/request-fields.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-subscription/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 [//]: #***************************************************************************
@@ -788,24 +832,24 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscriptions/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscriptions/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscriptions/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscriptions/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscriptions/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-subscriptions/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Change price
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/change-price/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/change-price/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/change-price/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/change-price/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/change-price/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/change-price/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 [//]: #***************************************************************************
@@ -816,36 +860,36 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-supported-workflows/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-supported-workflows/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-supported-workflows/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-supported-workflows/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-supported-workflows/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-supported-workflows/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Add workflow to supported
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-to-supported-workflows/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-to-supported-workflows/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-to-supported-workflows/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-to-supported-workflows/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-to-supported-workflows/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-to-supported-workflows/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Delete workflow from supported
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-from-supported-workflows/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-from-supported-workflows/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-from-supported-workflows/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-from-supported-workflows/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-from-supported-workflows/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/delete-from-supported-workflows/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 [//]: #***************************************************************************
@@ -856,48 +900,48 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-searchable-entities/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-searchable-entities/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-searchable-entities/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-searchable-entities/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-searchable-entities/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-searchable-entities/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Search for entity
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/request-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/search-for-entities/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Get entity data
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-view/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-view/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-view/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-view/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-view/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-view/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Get entity form definition
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-form/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-form/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-form/path-parameters.adoc")).result(binding) %>
 
 #### Example response
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-form/http-response.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-entity-form/http-response.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 [//]: #***************************************************************************
@@ -908,23 +952,23 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-recent-viewed-tasks/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-recent-viewed-tasks/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-recent-viewed-tasks/path-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-recent-viewed-tasks/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-recent-viewed-tasks/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/list-recent-viewed-tasks/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Add recently viewed task
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-recent-viewed-task/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-recent-viewed-task/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-recent-viewed-task/path-parameters.adoc")).result(binding) %>
 
 #### Example response
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-recent-viewed-task/http-response.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/add-recent-viewed-task/http-response.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 [//]: #***************************************************************************
@@ -935,26 +979,26 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/request-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-active-tasks/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### List completed tasks
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/request-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/publisher-completed-tasks/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 
@@ -966,26 +1010,26 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-profile/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-profile/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-profile/path-parameters.adoc")).result(binding) %>
 
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-profile/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-profile/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/get-user-profile/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 ### Update user profile
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/path-parameters.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/request-parameters.adoc")).result(binding) %>
 
 #### Example response
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/http-response.adoc")).result(binding) %>
-<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/response-fields.adoc")).result(binding) %
-
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/update-user-profile/response-fields.adoc")).result(binding) %>
 [//]: #----------------------------------------------------------------------------
 
 
@@ -997,6 +1041,7 @@ Return all Clients for whom the logged in user can start the given workflow
 
 #### Example request
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/help-request/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("../infrastructure/target/generated-snippets/help-request/curl-request.adoc")).result(binding) %>
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/help-request/path-parameters.adoc")).result(binding) %>
 *Only one of email, phone, skype is required*
 <%= ERB.new(File.read("../infrastructure/target/generated-snippets/help-request/request-fields.adoc")).result(binding) %>
