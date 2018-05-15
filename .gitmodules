@@ -1,3 +1,0 @@
-[submodule "api"]
-	path = release/api
-	url = git@github.com:avocado-workflow/api.git
