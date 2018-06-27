@@ -88,6 +88,21 @@ A `GET` request will return all process instances for client
 
 [//]: #----------------------------------------------------------------------------
 
+### List all process instances for root entity
+A `GET` request will return all process instances for root entity
+
+#### Example request
+<%= ERB.new(File.read("snippets/list-process-instances-for-root-entity/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/list-process-instances-for-root-entity/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/list-process-instances-for-root-entity/path-parameters.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/list-process-instances-for-root-entity/request-parameters.adoc")).result(binding) %>
+
+#### Example response
+<%= ERB.new(File.read("snippets/list-process-instances-for-root-entity/http-response.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/list-process-instances-for-root-entity/response-fields.adoc")).result(binding) %>
+
+[//]: #----------------------------------------------------------------------------
+
 ### Search for process instance
 A `GET` request will return all process instances that has indexed properties in WIDO that matches search value
 
