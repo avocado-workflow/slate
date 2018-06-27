@@ -22,7 +22,7 @@ Options:
 
 run_build() {
   bundle install
-  bundle exec middleman build --clean
+  bundle exec middleman build --clean --verbose
 }
 
 parse_args() {
