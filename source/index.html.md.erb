@@ -43,6 +43,81 @@ Status code       | Usage
 
 [//]: #***************************************************************************
 
+## Workflow categories
+
+### Create workflow category
+A `POST` request will create new workflow category
+
+#### Example request
+<%= ERB.new(File.read("snippets/workflow-categories-create/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create/path-parameters.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create/request-fields.adoc")).result(binding) %>
+
+#### Example response
+<%= ERB.new(File.read("snippets/workflow-categories-create/http-response.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create/response-fields.adoc")).result(binding) %>
+
+[//]: #----------------------------------------------------------------------------
+
+### Create several workflow categories with one request
+A `POST` request will create new workflow categories
+
+#### Example request
+<%= ERB.new(File.read("snippets/workflow-categories-create-bulk/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create-bulk/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create-bulk/path-parameters.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create-bulk/request-fields.adoc")).result(binding) %>
+
+#### Example response
+<%= ERB.new(File.read("snippets/workflow-categories-create-bulk/http-response.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-create-bulk/response-fields.adoc")).result(binding) %>
+
+[//]: #----------------------------------------------------------------------------
+
+### List workflow categories for organization
+A `GET` request will return all workflow categories for requested organization
+
+#### Example request
+<%= ERB.new(File.read("snippets/workflow-categories-list/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-list/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-list/path-parameters.adoc")).result(binding) %>
+
+#### Example response
+<%= ERB.new(File.read("snippets/workflow-categories-list/http-response.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-list/response-fields.adoc")).result(binding) %>
+
+[//]: #----------------------------------------------------------------------------
+
+### Get workflow category for organization by code
+A `GET` request will return requested workflow category for requested organization
+
+#### Example request
+<%= ERB.new(File.read("snippets/workflow-categories-get/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-get/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-get/path-parameters.adoc")).result(binding) %>
+
+#### Example response
+<%= ERB.new(File.read("snippets/workflow-categories-get/http-response.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-get/response-fields.adoc")).result(binding) %>
+
+[//]: #----------------------------------------------------------------------------
+
+### Get workflow category for organization by code
+A `DELETE` request will delete requested workflow category for requested organization
+
+#### Example request
+<%= ERB.new(File.read("snippets/workflow-categories-delete/http-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-delete/curl-request.adoc")).result(binding) %>
+<%= ERB.new(File.read("snippets/workflow-categories-delete/path-parameters.adoc")).result(binding) %>
+
+#### Example response
+<%= ERB.new(File.read("snippets/workflow-categories-delete/http-response.adoc")).result(binding) %>
+
+[//]: #----------------------------------------------------------------------------
+
+[//]: #***************************************************************************
+
 ## Workflow
 
 ### Create workflow draft
